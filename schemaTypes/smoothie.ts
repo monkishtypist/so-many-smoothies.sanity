@@ -40,6 +40,14 @@ export default defineType({
       type: 'image',
       title: 'Smoothie Image',
       options: { hotspot: true },
+      fields: [
+        {
+          name: 'alt',
+          type: 'string',
+          title: 'Alternative Text',
+          description: 'Used for accessibility and SEO purposes',
+        },
+      ],
     }),
     defineField({
       name: 'date',
