@@ -33,7 +33,15 @@ export default defineType({
       name: 'tags',
       type: 'array',
       title: 'Tags',
-      of: [{ type: 'reference', to: [{ type: 'category' }] }],
+      of: [
+        {
+          type: 'string',
+        },
+      ],
+      options: {
+        list: [], // This allows editors to pick from existing strings
+        layout: 'tags', // Displays a "tag input" style UI
+      },
     }),
     defineField({
       name: 'image',
