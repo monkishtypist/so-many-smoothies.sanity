@@ -47,7 +47,10 @@ export default defineType({
       name: 'image',
       type: 'image',
       title: 'Smoothie Image',
-      options: { hotspot: true },
+      options: { 
+        metadata: ['image'],
+        hotspot: true
+      },
       fields: [
         {
           name: 'alt',
