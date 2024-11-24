@@ -66,5 +66,17 @@ export default defineType({
       title: 'Date Published',
       validation: (Rule) => Rule.required(),
     }),
+    defineField({
+      name: 'recipePrompt',
+      type: 'text',
+      title: 'Recipe Prompt',
+      description: 'The full recipe prompt sent to OpenAI.',
+    }),
+    defineField({
+      name: 'imagePrompt',
+      type: 'text',
+      title: 'Image Prompt',
+      description: 'The image prompt used for generating the smoothie image.',
+    }),
   ],
 });
