@@ -1,5 +1,6 @@
 // schemaTypes/smoothie.ts
 import { defineType, defineField } from 'sanity';
+import ImageWithGenerateButton from '../components/ImageWithGenerateButton';
 
 export default defineType({
   name: 'smoothie',
@@ -39,24 +40,26 @@ export default defineType({
         },
       ],
       options: {
-        list: [], // This allows editors to pick from existing strings
-        layout: 'tags', // Displays a "tag input" style UI
+        list: [],
+        layout: 'tags',
       },
     }),
     defineField({
       name: 'image',
       type: 'image',
       title: 'Smoothie Image',
-      options: { 
+      components: {
+        input: ImageWithGenerateButton,
+      },
+      options: {
         metadata: ['image'],
-        hotspot: true
+        hotspot: true,
       },
       fields: [
         {
           name: 'alt',
           type: 'string',
           title: 'Alternative Text',
-          description: 'Used for accessibility and SEO purposes',
         },
       ],
     }),
