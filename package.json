@@ -15,12 +15,12 @@
     "sanity"
   ],
   "dependencies": {
-    "@sanity/ui": "^2.8.24",
-    "@sanity/vision": "^3.64.3",
+    "@sanity/ui": "^2.8.25",
+    "@sanity/vision": "^3.65.0",
     "components": "link:@sanity/base/components",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "sanity": "^3.64.3",
+    "sanity": "^3.65.0",
     "sanity-plugin-media": "^2.3.2",
     "styled-components": "^6.1.13"
   },
@@ -28,7 +28,7 @@
     "@sanity/eslint-config-studio": "^4.0.0",
     "@types/react": "^18.3.12",
     "eslint": "^9.15.0",
-    "prettier": "^3.3.3",
+    "prettier": "^3.4.1",
     "typescript": "^5.7.2"
   },
   "prettier": {

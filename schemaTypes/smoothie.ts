@@ -14,6 +14,20 @@ export default defineType({
       validation: (Rule) => Rule.required(),
     }),
     defineField({
+      name: "slug",
+      title: "Slug",
+      type: "slug",
+      options: {
+        source: "title",
+        maxLength: 96,
+        slugify: (input) =>
+          input
+            .toLowerCase()
+            .replace(/[^a-z0-9]+/g, "-")
+            .replace(/^-+|-+$/g, ""), // Replace spaces and special chars with hyphens
+      },
+    }),
+    defineField({
       name: 'description',
       type: 'text',
       title: 'Description',
