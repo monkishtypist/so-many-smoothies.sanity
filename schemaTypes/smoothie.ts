@@ -1,6 +1,6 @@
 // schemaTypes/smoothie.ts
 import { defineType, defineField } from 'sanity';
-import ImageWithGenerateButton from '../components/ImageWithGenerateButton';
+// import ImageWithGenerateButton from '../components/ImageWithGenerateButton';
 
 export default defineType({
   name: 'smoothie',
@@ -48,9 +48,9 @@ export default defineType({
       name: 'image',
       type: 'image',
       title: 'Smoothie Image',
-      components: {
-        input: ImageWithGenerateButton,
-      },
+      // components: {
+      //   input: ImageWithGenerateButton,
+      // },
       options: {
         metadata: ['image'],
         hotspot: true,

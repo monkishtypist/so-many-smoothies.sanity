@@ -26,12 +26,20 @@ export default defineType({
       to: {type: 'author'},
     }),
     defineField({
-      name: 'mainImage',
-      title: 'Main image',
+      name: 'image',
       type: 'image',
+      title: 'Post Image',
       options: {
+        metadata: ['image'],
         hotspot: true,
       },
+      fields: [
+        {
+          name: 'alt',
+          type: 'string',
+          title: 'Alternative Text',
+        },
+      ],
     }),
     defineField({
       name: 'categories',
@@ -40,14 +48,14 @@ export default defineType({
       of: [{type: 'reference', to: {type: 'category'}}],
     }),
     defineField({
-      name: 'publishedAt',
-      title: 'Published at',
-      type: 'datetime',
-    }),
-    defineField({
       name: 'body',
       title: 'Body',
       type: 'blockContent',
+    }),
+    defineField({
+      name: 'date',
+      title: 'Date Published',
+      type: 'datetime',
     }),
   ],
 
