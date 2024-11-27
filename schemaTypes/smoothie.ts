@@ -33,6 +33,12 @@ export default defineType({
       title: 'Description',
     }),
     defineField({
+      name: "affiliateProducts",
+      title: "Affiliate Products",
+      type: "array",
+      of: [{ type: "reference", to: { type: "affiliateProduct" } }],
+    }),
+    defineField({
       name: 'ingredients',
       type: 'array',
       title: 'Ingredients',
