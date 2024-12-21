@@ -1,8 +1,9 @@
+import about from './about'
+import affiliateProduct from './affiliateProduct';
+import author from './author'
 import blockContent from './blockContent'
 import category from './category'
 import post from './post'
-import author from './author'
 import smoothie from './smoothie'
-import affiliateProduct from './affiliateProduct';
 
-export const schemaTypes = [post, author, category, blockContent, smoothie, affiliateProduct]
+export const schemaTypes = [about,  affiliateProduct, author, blockContent, category, post, smoothie]
